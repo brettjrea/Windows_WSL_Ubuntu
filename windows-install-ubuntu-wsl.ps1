@@ -11,12 +11,12 @@ wsl --set-default-version 2
 Invoke-WebRequest -Uri https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi -OutFile wsl_update_x64.msi -UseBasicParsing
 .\wsl_update_x64.msi
 
-# Step 3: Download Ubuntu
+# Step 3: Download Ubuntu...
 Invoke-WebRequest -Uri https://aka.ms/wslubuntu -OutFile Ubuntu.appx -UseBasicParsing
 Write-Host "Ubuntu is downloaded."
 
 # Step 4: Add Ubuntu package
-Add-AppxPackage .\Ubuntu.appx
+Add-AppxPackage .\ubuntu.appx
 Write-Host "Ubuntu package is added."
 
 # Step 5: Update WSL
